@@ -9,6 +9,7 @@ I filter incoming emails
 - into folders
 - according to keywords in sender addresses
 - using "OR"
+
 I gather the filters like the following example.
 ```json
 {
@@ -29,7 +30,7 @@ I gather the filters like the following example.
         ]
 }
 ```
-You can treak the script to suit your need.
+==You can treak the script to suit your need.==
 
 ### Step 2: Run the script
 `python3 generate.py -i inputfile -o msgFilterRules.dat`
@@ -48,4 +49,4 @@ You can treak the script to suit your need.
 ### Step 4: Verify that the rules are properly imported
 - open Thunderbird
 - open rules, see if they are properly imported
-- move some files into the inbox folder to see if the rules work as intended
+- move some ==unimportant== emails into the inbox folder to see if the rules work as intended
