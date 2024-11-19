@@ -6,7 +6,7 @@ def cat_to_folder(cat):
     return "".join(word.capitalize() for word in cat.split(" "))
 
 def json_to_thunderbird_dat(json_source):
-    protocal = json_source['protocal']
+    protocol = json_source['protocol']
     email = json_source['email']
     server = json_source['server']
     folderdir = json_source['folderdir']
@@ -21,7 +21,7 @@ def json_to_thunderbird_dat(json_source):
             'enabled="yes"',
             'type="17"',
             'action="Move to folder"',
-            f'actionValue="{protocal}://{quote(email)}@{server}/{folderdir}/{cat_to_folder(folder)}"',
+            f'actionValue="{protocol}://{quote(email)}@{server}/{folderdir}/{cat_to_folder(folder)}"',
             f'condition="OR {conditions}"'
         ]        
         output.append('\n'.join(filter_block))

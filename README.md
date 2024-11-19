@@ -14,7 +14,7 @@ It's a python script that generates thunderbird filter files to be imported
 - I create a `json` file as follows:
 ```json
 {
-    "protocal": "imap",
+    "protocol": "imap",
     "email": "me@proton.me",
     "server": "127.0.0.1",
     "folderdir": "Folders/Notifications",
