@@ -30,7 +30,7 @@ I gather the filters like the following example.
         ]
 }
 ```
-==You can treak the script to suit your need.==
+**You can treak the script to suit your need.**
 
 ### Step 2: Run the script
 `python3 generate.py -i inputfile -o msgFilterRules.dat`
@@ -43,10 +43,11 @@ I gather the filters like the following example.
     - you should be able to see `msgFilterRules.dat` there
     - better create some random rules to see if it is the exact file
 - quit Thunderbird
+- **back up** the old msgFilterRules.dat if there are any rules that you have been using
 - copy the generated `msgFilterRules.dat` there
 - reopen Thunderbird
 
 ### Step 4: Verify that the rules are properly imported
 - open Thunderbird
 - open rules, see if they are properly imported
-- move some ==unimportant== emails into the inbox folder to see if the rules work as intended
+- move some **unimportant** emails into the inbox folder to see if the rules work as intended
